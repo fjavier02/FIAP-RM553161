@@ -1,0 +1,89 @@
+body {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 14px;
+}
+
+h1 {
+    color: #FFF;
+    text-align: center;
+    font-size: 32px;
+}
+.main-sub-title {
+    font-size: 14px;
+}
+
+.main-img {
+    height: 407px;
+    flex-shrink: 0;
+    object-fit: cover;
+}
+
+.main-title{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+}
+
+.main-card {
+    display: flex;
+    align-items: center;
+}
+.row {
+    font-size: 11px;
+}
+
+.title-card {
+    font-size: 14px;
+    font-weight: 600;
+}
+
+.saiba-mais {
+    text-decoration: none;
+    color: #18A0FB;
+}
+
+.card-max-width {
+    width: 240px;
+}
+
+.filter-shadow {
+    filter: brightness(50%)
+}
+
+.img-shadow {
+    height: 430px;
+    object-fit: cover;
+    min-width: 300px
+}
+
+.icon-medial-social{
+    font-size: 10px;
+}
+
+.card-beneficios{
+    height: 95px;
+    font-size: 10px;
+}
+.fs-10px{
+    font-size: 10px;
+}
+.store {
+    width: 140px;
+}
+.copyright{
+    background-color: #0E204E;
+}
+
+.nav-bar-movil-aside {
+    width: 250px;
+    height: 100vh;
+    z-index: 100;
+    left: -250px;
+    transition: left 1s ease; /* Agregamos una transición para la animación */
+}
+
+.show-nav {
+    left: 0; /* Posición mostrada */
+}

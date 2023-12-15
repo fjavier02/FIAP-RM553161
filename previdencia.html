@@ -1,0 +1,374 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link
+            href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
+            rel="stylesheet"
+            integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN"
+            crossorigin="anonymous"
+        />
+        <link rel="stylesheet" href="previdencia.css">
+        <title>Previdencia</title>
+    </head>
+    <body>
+        <header>
+            <!-- NAVBAR DESKTOP -->
+            <div id="navbar-desktop" class="px-3 py-2 text-bg-dark border-bottom">
+                <div class="container">
+                    <div
+                        class="d-flex flex-wrap align-items-center justify-content-center justify-content-lg-start"
+                    >
+                        <a
+                            href="/"
+                            class="d-flex align-items-center my-2 my-lg-0 me-lg-auto text-white text-decoration-none"
+                        >
+                            <svg
+                                class="bi me-2"
+                                width="40"
+                                height="32"
+                                role="img"
+                                aria-label="Bootstrap"
+                            >
+                                <use xlink:href="#bootstrap"></use>
+                            </svg>
+                        </a>
+
+                        <ul
+                            class="nav col-12 col-lg-auto my-2 justify-content-center my-md-0 text-small"
+                        >
+                            <li>
+                                <a
+                                    href="/index.html"
+                                    class="nav-link text-secondary"
+                                >
+                                    Inicio
+                                </a>
+                            </li>
+                            <li>
+                                <a
+                                    href="/seguro.html"
+                                    class="nav-link text-white"
+                                >
+                                    Tipos de Seguros
+                                </a>
+                            </li>
+                            <li>
+                                <a
+                                    href="/previdencia.html"
+                                    class="nav-link text-white"
+                                >
+                                    Tipos de Previdência
+                                </a>
+                            </li>
+
+                            <li class="d-flex align-items-end">
+                                <div class="text-end">
+                                    <button
+                                        type="button"
+                                        class="btn btn-primary"
+                                        onclick="redirectLogin()"
+                                    >
+                                        Login
+                                    </button>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <!-- NAVBAR MOVIL -->
+            <!-- <div
+                class="navbar-mobil d-flex flex-column flex-shrink-0 p-3 bg-body-tertiary"
+                style="width: 250px; height: 100vh; display: none"
+            >
+                <a
+                    href="/"
+                    class="d-flex align-items-center mb-3 mb-md-0 me-md-auto link-body-emphasis text-decoration-none"
+                >
+                    <svg class="bi pe-none me-2" width="40" height="32">
+                        <use xlink:href="#bootstrap"></use>
+                    </svg>
+                    <span class="fs-4">Vida Segura</span>
+                </a>
+                <hr />
+                <ul class="nav nav-pills flex-column mb-auto">
+                    <li class="nav-item">
+                        <a href="#" class="nav-link active" aria-current="page">
+                            <svg class="bi pe-none me-2" width="16" height="16">
+                                <use xlink:href="#home"></use>
+                            </svg>
+                            Home
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#" class="nav-link link-body-emphasis">
+                            <svg class="bi pe-none me-2" width="16" height="16">
+                                <use xlink:href="#speedometer2"></use>
+                            </svg>
+                            Dashboard
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#" class="nav-link link-body-emphasis">
+                            <svg class="bi pe-none me-2" width="16" height="16">
+                                <use xlink:href="#table"></use>
+                            </svg>
+                            Orders
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#" class="nav-link link-body-emphasis">
+                            <svg class="bi pe-none me-2" width="16" height="16">
+                                <use xlink:href="#grid"></use>
+                            </svg>
+                            Products
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#" class="nav-link link-body-emphasis">
+                            <svg class="bi pe-none me-2" width="16" height="16">
+                                <use xlink:href="#people-circle"></use>
+                            </svg>
+                            Customers
+                        </a>
+                    </li>
+                </ul>
+                <hr />
+                <div class="dropdown">
+                    <a
+                        href="#"
+                        class="d-flex align-items-center link-body-emphasis text-decoration-none dropdown-toggle"
+                        data-bs-toggle="dropdown"
+                        aria-expanded="false"
+                    >
+                        <img
+                            src="https://github.com/mdo.png"
+                            alt=""
+                            width="32"
+                            height="32"
+                            class="rounded-circle me-2"
+                        />
+                        <strong>mdo</strong>
+                    </a>
+                    <ul class="dropdown-menu text-small shadow" style="">
+                        <li>
+                            <a class="dropdown-item" href="#">New project...</a>
+                        </li>
+                        <li><a class="dropdown-item" href="#">Settings</a></li>
+                        <li><a class="dropdown-item" href="#">Profile</a></li>
+                        <li><hr class="dropdown-divider" /></li>
+                        <li><a class="dropdown-item" href="#">Sign out</a></li>
+                    </ul>
+                </div>
+            </div> -->
+        </header>
+
+        <div class="container">
+            <h1 class="fw-bold mb-4 mt-4">Tipos de Previdência</h1>
+
+            <div class="type-previdencia">
+                <h2>Previdência Privada (PGBL e VGBL):</h2>
+                <p class="fs-12px">
+                    A previdência privada é uma opção popular para o
+                    planejamento de aposentadoria. Ela pode ser dividida em dois
+                    principais tipos: Plano Gerador de Benefício Livre (PGBL) e
+                    Vida Gerador de Benefício Livre (VGBL). Ambos permitem que
+                    você faça contribuições regulares para um fundo de
+                    previdência, que cresce ao longo do tempo.
+                </p>
+                <p class="fs-12px">Benefícios:</p>
+                <ul>
+                    <li class="fs-12px">
+                        Economia de Impostos: Contribuições ao PGBL podem ser
+                        deduzidas do Imposto de Renda, proporcionando economia
+                        fiscal.
+                    </li>
+                    <li class="fs-12px">
+                        Flexibilidade de Investimento: Você pode escolher como
+                        deseja investir seus fundos, desde opções mais
+                        conservadoras até investimentos mais arriscados.
+                    </li>
+                    <li class="fs-12px">
+                        Rendimentos: Os rendimentos são isentos de imposto até o
+                        momento do resgate.
+                    </li>
+                </ul>
+                <p class="fs-12px">
+                    Rendimento Financeiro: O rendimento financeiro depende das
+                    opções de investimento escolhidas. Geralmente, quanto mais
+                    arriscado o investimento, maior o potencial de retorno.
+                </p>
+            </div>
+
+            <hr />
+            <div class="type-previdencia">
+                <h2>Previdência Complementar:</h2>
+                <p class="fs-12px">
+                    A previdência complementar é uma opção para quem deseja
+                    aumentar sua renda na aposentadoria, além dos benefícios da
+                    previdência social. Ela pode ser oferecida por empregadores
+                    ou ser adquirida individualmente.
+                </p>
+                <p class="fs-12px">Benefícios:</p>
+                <ul>
+                    <li class="fs-12px">
+                        Aumento da Renda na Aposentadoria: Permite que você
+                        acumule fundos adicionais para garantir um padrão de
+                        vida confortável na aposentadoria.
+                    </li>
+                    <li class="fs-12px">
+                        Planejamento Financeiro: Ajuda a planejar a
+                        aposentadoria de acordo com suas metas e necessidades
+                        específicas.
+                    </li>
+                    <li class="fs-12px">
+                        Flexibilidade de Contribuições: Você pode escolher
+                        quanto deseja contribuir, dependendo de suas finanças.
+                    </li>
+                </ul>
+                <p class="fs-12px">
+                    Rendimento Financeiro: O rendimento dependerá dos
+                    investimentos escolhidos dentro do plano.
+                </p>
+            </div>
+            <hr />
+            <div class="type-previdencia">
+                <h2>Previdência Empresarial (Plano de Pensão):</h2>
+                <p class="fs-12px">
+                    Os planos de previdência empresarial, também conhecidos como
+                    planos de pensão, são oferecidos por empregadores como um
+                    benefício para funcionários. Eles ajudam os funcionários a
+                    economizar para a aposentadoria.
+                </p>
+                <p class="fs-12px">Benefícios:</p>
+                <ul>
+                    <li class="fs-12px">
+                        Contribuição do Empregador: Muitas vezes, o empregador
+                        contribui com uma parte dos fundos, aumentando o valor
+                        total acumulado.
+                    </li>
+                    <li class="fs-12px">
+                        Contribuições Automáticas: As contribuições são
+                        geralmente deduzidas diretamente do salário, facilitando
+                        o investimento regular.
+                    </li>
+                    <li class="fs-12px">
+                        Opções de Investimento: Os funcionários têm opções de
+                        investimento que se alinham com seus objetivos
+                        financeiros.
+                    </li>
+                </ul>
+                <p class="fs-12px">
+                    Rendimento Financeiro: O rendimento dependerá da gestão do
+                    fundo de pensão e das escolhas de investimento dos
+                    funcionários.
+                </p>
+            </div>
+            <hr />
+            <div class="type-previdencia">
+                <h2>Previdência Pública (INSS):</h2>
+                <p class="fs-12px">
+                    A previdência pública, representada no Brasil pelo INSS, é
+                    um sistema de seguro social que fornece benefícios
+                    previdenciários, como aposentadoria e pensões, financiados
+                    por contribuições dos trabalhadores e empregadores.
+                </p>
+                <p class="fs-12px">Benefícios:</p>
+                <ul>
+                    <li class="fs-12px">
+                        Benefícios Obrigatórios: Oferece benefícios mínimos de
+                        aposentadoria e segurança social.
+                    </li>
+                    <li class="fs-12px">
+                        Cobertura Abrangente: Abrange a maioria dos
+                        trabalhadores brasileiros, proporcionando uma rede de
+                        segurança básica.
+                    </li>
+                </ul>
+                <p class="fs-12px">
+                    Rendimento Financeiro: Os rendimentos do INSS são definidos
+                    por critérios estabelecidos pelo governo, e o valor do
+                    benefício pode variar de acordo com o histórico de
+                    contribuições e outros fatores. Não há rendimento financeiro
+                    adicional, pois é um sistema de benefícios definidos.
+                </p>
+            </div>
+        </div>
+
+        <footer>
+            <div class="container">
+                <hr />
+                <div class="medial-social">
+                    <h3 class="fs-6">Mídias sociais</h3>
+                    <div
+                        class="icon-medial-social d-flex align-items-center mb-2"
+                    >
+                        <img src="/assets/Facebook.svg" alt="" />
+                        <p class="fw-medium mb-0 ps-2">VidaSegura</p>
+                    </div>
+
+                    <div
+                        class="icon-medial-social d-flex align-items-center mb-2"
+                    >
+                        <img src="/assets/Twitter.svg" alt="" />
+                        <p class="fw-medium mb-0 ps-2">@VidaSegura</p>
+                    </div>
+
+                    <div
+                        class="icon-medial-social d-flex align-items-center mb-2"
+                    >
+                        <img src="/assets/instagram.svg" alt="" />
+                        <p class="fw-medium mb-0 ps-2">@VidaSegura</p>
+                    </div>
+                    <div
+                        class="icon-medial-social d-flex align-items-center mb-2"
+                    >
+                        <img src="/assets/Youtube.svg" alt="" />
+                        <p class="fw-medium mb-0 ps-2">VidaSegura</p>
+                    </div>
+                </div>
+                <hr />
+                <div class="out-client">
+                    <h4 class="fs-6">É nosso cliente ?</h4>
+                    <p class="fs-10px">
+                        Caso seja o próprio segurado, você também pode fazer a
+                        solicitação de benefício e acompanhamento da análise
+                        direto pelo aplicativo.
+                    </p>
+                    <p class="fs-10px">
+                        Baixe agora mesmo o app disponível para iOS e Android,
+                        clicando em um dos links abaixo e tenha os principais
+                        serviços em suas mãos:
+                    </p>
+                    <div
+                        class="d-flex justify-content-center align-items-center"
+                    >
+                        <img
+                            class="store"
+                            src="/assets/googlePlay.png"
+                            alt="icono de GooglePlay"
+                        />
+                        <img
+                            class="store"
+                            src="/assets/apple.png"
+                            alt="icono de Apple Store"
+                        />
+                    </div>
+                </div>
+            </div>
+            <div class="copyright d-flex flex-column align-items-center pt-3">
+                <h3 class="text-light">VidaSegura</h3>
+                <p class="text-light">Copyright 2023 All Rights Reserved</p>
+            </div>
+        </footer>
+        <script
+            src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+            integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+            crossorigin="anonymous"
+        ></script>
+        <script src="main.js"></script>
+    </body>
+</html>

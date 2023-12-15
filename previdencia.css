@@ -1,0 +1,22 @@
+body {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 14px;
+}
+
+h1 {
+    text-align: center;
+    font-size: 32px;
+}
+
+.fs-10px{
+    font-size: 10px;
+}
+.fs-12px{
+    font-size: 12px;
+}
+.store {
+    width: 140px;
+}
+.copyright{
+    background-color: #0E204E;
+}

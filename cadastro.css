@@ -1,0 +1,9 @@
+.btn-center{
+    position: relative;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.form-max-width{
+    max-width: 450px;
+}
