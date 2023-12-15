@@ -9,162 +9,135 @@
             integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN"
             crossorigin="anonymous"
         />
-        <link rel="stylesheet" href="/cadastro.css">
+        <link rel="stylesheet" href="/cadastro.css" />
         <title>Login</title>
     </head>
     <body>
-      <header>
-        <!-- NAVBAR DESKTOP -->
-        <div id="navbar-desktop" class="px-3 py-2 text-bg-dark border-bottom">
-            <div class="container">
-                <div
-                    class="d-flex flex-wrap align-items-center justify-content-center justify-content-lg-start"
-                >
-                    <a
-                        href="/"
-                        class="d-flex align-items-center my-2 my-lg-0 me-lg-auto text-white text-decoration-none"
+        <header>
+            <!-- NAVBAR DESKTOP -->
+            <div
+                id="navbar-desktop"
+                class="px-3 py-2 text-bg-dark border-bottom d-none d-md-block"
+            >
+                <div class="container">
+                    <div
+                        class="d-flex flex-wrap align-items-center justify-content-center"
                     >
-                        <svg
-                            class="bi me-2"
-                            width="40"
-                            height="32"
-                            role="img"
-                            aria-label="Bootstrap"
+                        <ul
+                            class="nav col-12 col-lg-auto my-2 justify-content-center my-md-0 text-small"
                         >
-                            <use xlink:href="#bootstrap"></use>
-                        </svg>
-                    </a>
-
-                    <ul
-                        class="nav col-12 col-lg-auto my-2 justify-content-center my-md-0 text-small"
-                    >
-                        <li>
-                            <a
-                                href="/index.html"
-                                class="nav-link text-secondary"
-                            >
-                                Inicio
-                            </a>
-                        </li>
-                        <li>
-                            <a
-                                href="/seguro.html"
-                                class="nav-link text-white"
-                            >
-                                Tipos de Seguros
-                            </a>
-                        </li>
-                        <li>
-                            <a
-                                href="/previdencia.html"
-                                class="nav-link text-white"
-                            >
-                                Tipos de Previdência
-                            </a>
-                        </li>
-
-                        <li class="d-flex align-items-end">
-                            <div class="text-end">
-                                <button
-                                    type="button"
-                                    class="btn btn-primary"
-                                    onclick="redirectLogin()"
+                            <li>
+                                <a
+                                    href="/index.html"
+                                    class="nav-link text-secondary"
                                 >
-                                    Login
-                                </button>
-                            </div>
-                        </li>
-                    </ul>
+                                    Inicio
+                                </a>
+                            </li>
+                            <li>
+                                <a
+                                    href="/seguro.html"
+                                    class="nav-link text-white"
+                                >
+                                    Tipos de Seguros
+                                </a>
+                            </li>
+                            <li>
+                                <a
+                                    href="/previdencia.html"
+                                    class="nav-link text-white"
+                                >
+                                    Tipos de Previdência
+                                </a>
+                            </li>
+
+                            <li class="d-flex align-items-end">
+                                <div class="text-end">
+                                    <button
+                                        type="button"
+                                        class="btn btn-primary"
+                                        onclick="redirectLogin()"
+                                    >
+                                        Login
+                                    </button>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
                 </div>
             </div>
-        </div>
 
-        <!-- NAVBAR MOVIL -->
-        <!-- <div
-            class="navbar-mobil d-flex flex-column flex-shrink-0 p-3 bg-body-tertiary"
-            style="width: 250px; height: 100vh; display: none"
-        >
-            <a
-                href="/"
-                class="d-flex align-items-center mb-3 mb-md-0 me-md-auto link-body-emphasis text-decoration-none"
+            <!-- NAVBAR MOVIL -->
+
+            <div
+                id="headerMovil"
+                class="nav-bar-movil d-flex justify-content-around p-2 d-md-none"
             >
-                <svg class="bi pe-none me-2" width="40" height="32">
-                    <use xlink:href="#bootstrap"></use>
-                </svg>
-                <span class="fs-4">Vida Segura</span>
-            </a>
-            <hr />
-            <ul class="nav nav-pills flex-column mb-auto">
-                <li class="nav-item">
-                    <a href="#" class="nav-link active" aria-current="page">
-                        <svg class="bi pe-none me-2" width="16" height="16">
-                            <use xlink:href="#home"></use>
-                        </svg>
-                        Home
-                    </a>
-                </li>
-                <li>
-                    <a href="#" class="nav-link link-body-emphasis">
-                        <svg class="bi pe-none me-2" width="16" height="16">
-                            <use xlink:href="#speedometer2"></use>
-                        </svg>
-                        Dashboard
-                    </a>
-                </li>
-                <li>
-                    <a href="#" class="nav-link link-body-emphasis">
-                        <svg class="bi pe-none me-2" width="16" height="16">
-                            <use xlink:href="#table"></use>
-                        </svg>
-                        Orders
-                    </a>
-                </li>
-                <li>
-                    <a href="#" class="nav-link link-body-emphasis">
-                        <svg class="bi pe-none me-2" width="16" height="16">
-                            <use xlink:href="#grid"></use>
-                        </svg>
-                        Products
-                    </a>
-                </li>
-                <li>
-                    <a href="#" class="nav-link link-body-emphasis">
-                        <svg class="bi pe-none me-2" width="16" height="16">
-                            <use xlink:href="#people-circle"></use>
-                        </svg>
-                        Customers
-                    </a>
-                </li>
-            </ul>
-            <hr />
-            <div class="dropdown">
-                <a
-                    href="#"
-                    class="d-flex align-items-center link-body-emphasis text-decoration-none dropdown-toggle"
-                    data-bs-toggle="dropdown"
-                    aria-expanded="false"
-                >
+                <img
+                    src="/assets/IconHamburger.svg"
+                    alt="icono de burger"
+                    onclick="toggleNavBar()"
+                />
+                <a class="fs-4 text-decoration-none text-black">Vida Segura</a>
+                <a href="/login.html" class="d-flex">
                     <img
-                        src="https://github.com/mdo.png"
-                        alt=""
-                        width="32"
-                        height="32"
-                        class="rounded-circle me-2"
+                        src="/assets/user-profile-02.svg"
+                        alt="icono de usuario"
                     />
-                    <strong>mdo</strong>
                 </a>
-                <ul class="dropdown-menu text-small shadow" style="">
-                    <li>
-                        <a class="dropdown-item" href="#">New project...</a>
+            </div>
+            <div
+                id="navBarMovil"
+                class="navbar-mobil d-flex flex-column flex-shrink-0 p-3 text-bg-dark nav-bar-movil-aside fixed-top"
+            >
+                <a
+                    href="/index.html"
+                    class="d-flex align-items-center mb-3 mb-md-0 me-md-auto link-body-emphasis text-decoration-none"
+                >
+                    <span class="fs-4 text-white">Vida Segura</span>
+                </a>
+                <hr />
+                <ul class="nav nav-pills flex-column mb-auto">
+                    <li class="nav-item">
+                        <a
+                            href="/index.html"
+                            class="nav-link text-white"
+                            aria-current="page"
+                        >
+                            <img
+                                src="/assets/IconHome.svg"
+                                alt="icono de inicio (uma casa)"
+                            />
+                            Inicio
+                        </a>
                     </li>
-                    <li><a class="dropdown-item" href="#">Settings</a></li>
-                    <li><a class="dropdown-item" href="#">Profile</a></li>
-                    <li><hr class="dropdown-divider" /></li>
-                    <li><a class="dropdown-item" href="#">Sign out</a></li>
+                    <li>
+                        <a
+                            href="/seguro.html"
+                            class="nav-link link-body-emphasis text-white"
+                        >
+                            <img
+                                src="/assets/IconSure.svg"
+                                alt="icono de escudo"
+                            />
+                            Tipos de Seguros
+                        </a>
+                    </li>
+                    <li>
+                        <a
+                            href="/previdencia.html"
+                            class="nav-link link-body-emphasis text-white"
+                        >
+                            <img
+                                src="/assets/IconPension.svg"
+                                alt="icono de guardachuva"
+                            />
+                            Tipos de Previdência
+                        </a>
+                    </li>
                 </ul>
             </div>
-        </div> -->
-    </header>
+        </header>
         <div class="container mt-4 mx-auto">
             <h1 class="text-center">Inscreva-se</h1>
             <form action="" method="post" class="mx-auto form-max-width">
@@ -205,7 +178,9 @@
                     type="text"
                 />
 
-                <button class="btn btn-primary btn-center mt-4" type="submit">Register</button>
+                <button class="btn btn-primary btn-center mt-4" type="submit">
+                    Register
+                </button>
             </form>
 
             <a href="/login.html" class="d-block text-center mt-3"

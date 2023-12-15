@@ -6,3 +6,15 @@
 .form-max-width{
     max-width: 450px;
 }
+
+.nav-bar-movil-aside {
+    width: 250px;
+    height: 100vh;
+    z-index: 100;
+    left: -250px;
+    transition: left 1s ease; /* Agregamos una transición para la animación */
+}
+
+.show-nav {
+    left: 0; /* Posición mostrada */
+}
