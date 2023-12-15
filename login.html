@@ -15,7 +15,10 @@
     <body>
         <header>
             <!-- NAVBAR DESKTOP -->
-            <div id="navbar-desktop" class="px-3 py-2 text-bg-dark border-bottom d-none d-md-block">
+            <div
+                id="navbar-desktop"
+                class="px-3 py-2 text-bg-dark border-bottom d-none d-md-block"
+            >
                 <div class="container">
                     <div
                         class="d-flex flex-wrap align-items-center justify-content-center"
@@ -66,40 +69,87 @@
 
             <!-- NAVBAR MOVIL -->
 
-            <div id="headerMovil" class="nav-bar-movil d-flex justify-content-around p-2 d-md-none">
-                <img src="/assets/IconHamburger.svg" alt="icono de burger" onclick="toggleNavBar()">
+            <div
+                id="headerMovil"
+                class="nav-bar-movil d-flex justify-content-around p-2 d-md-none"
+            >
+                <img
+                    src="/assets/IconHamburger.svg"
+                    alt="icono de burger"
+                    onclick="toggleNavBar()"
+                />
                 <a class="fs-4 text-decoration-none text-black">Vida Segura</a>
                 <a href="/login.html" class="d-flex">
-                    <img src="/assets/user-profile-02.svg" alt="icono de usuario">
+                    <img
+                        src="/assets/user-profile-02.svg"
+                        alt="icono de usuario"
+                    />
                 </a>
             </div>
             <div
                 id="navBarMovil"
-                class="navbar-mobil d-flex flex-column flex-shrink-0 p-3 text-bg-dark  nav-bar-movil-aside fixed-top"
+                class="navbar-mobil d-flex flex-column flex-shrink-0 p-3 text-bg-dark nav-bar-movil-aside fixed-top"
             >
-                <a
-                    href="/index.html"
-                    class="d-flex align-items-center mb-3 mb-md-0 me-md-auto link-body-emphasis text-decoration-none"
-                >
-                    <span class="fs-4 text-white">Vida Segura</span>
-                </a>
+                <div class="d-flex justify-content-between">
+                    <a
+                        href="/index.html"
+                        class="d-flex align-items-center mb-3 mb-md-0 me-md-auto link-body-emphasis text-decoration-none"
+                    >
+                        <span class="fs-4 text-white">Vida Segura</span>
+                    </a>
+                    <svg
+                        onclick="removeNavBar()"
+                        class="align-items-center"
+                        xmlns="http://www.w3.org/2000/svg"
+                        width="24"
+                        height="24"
+                        viewBox="0 0 24 24"
+                        fill="none"
+                    >
+                        <path
+                            d="M18 6L6 18M18 18L6 6"
+                            stroke="white"
+                            stroke-width="2"
+                            stroke-linecap="round"
+                        />
+                    </svg>
+                </div>
                 <hr />
                 <ul class="nav nav-pills flex-column mb-auto">
                     <li class="nav-item">
-                        <a href="/index.html" class="nav-link text-white" aria-current="page">
-                            <img src="/assets/IconHome.svg" alt="icono de inicio (uma casa)">
+                        <a
+                            href="/index.html"
+                            class="nav-link text-white"
+                            aria-current="page"
+                        >
+                            <img
+                                src="/assets/IconHome.svg"
+                                alt="icono de inicio (uma casa)"
+                            />
                             Inicio
                         </a>
                     </li>
                     <li>
-                        <a href="/seguro.html" class="nav-link link-body-emphasis text-white">
-                            <img src="/assets/IconSure.svg" alt="icono de escudo">
+                        <a
+                            href="/seguro.html"
+                            class="nav-link link-body-emphasis text-white"
+                        >
+                            <img
+                                src="/assets/IconSure.svg"
+                                alt="icono de escudo"
+                            />
                             Tipos de Seguros
                         </a>
                     </li>
                     <li>
-                        <a href="/previdencia.html" class="nav-link link-body-emphasis text-white">
-                            <img src="/assets/IconPension.svg" alt="icono de guardachuva">
+                        <a
+                            href="/previdencia.html"
+                            class="nav-link link-body-emphasis text-white"
+                        >
+                            <img
+                                src="/assets/IconPension.svg"
+                                alt="icono de guardachuva"
+                            />
                             Tipos de Previdência
                         </a>
                     </li>

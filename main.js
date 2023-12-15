@@ -41,3 +41,8 @@ function toggleNavBar() {
   var navBarMovil = document.getElementById("navBarMovil");
   navBarMovil.classList.toggle("show-nav");
 }
+
+function removeNavBar() {
+  var navBarMovil = document.getElementById("navBarMovil");
+  navBarMovil.classList.remove("show-nav");
+}

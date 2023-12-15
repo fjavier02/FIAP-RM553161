@@ -90,12 +90,30 @@
                 id="navBarMovil"
                 class="navbar-mobil d-flex flex-column flex-shrink-0 p-3 text-bg-dark nav-bar-movil-aside fixed-top"
             >
-                <a
-                    href="/index.html"
-                    class="d-flex align-items-center mb-3 mb-md-0 me-md-auto link-body-emphasis text-decoration-none"
-                >
-                    <span class="fs-4 text-white">Vida Segura</span>
-                </a>
+                <div class="d-flex justify-content-between">
+                    <a
+                        href="/index.html"
+                        class="d-flex align-items-center mb-3 mb-md-0 me-md-auto link-body-emphasis text-decoration-none"
+                    >
+                        <span class="fs-4 text-white">Vida Segura</span>
+                    </a>
+                    <svg
+                        onclick="removeNavBar()"
+                        class="align-items-center"
+                        xmlns="http://www.w3.org/2000/svg"
+                        width="24"
+                        height="24"
+                        viewBox="0 0 24 24"
+                        fill="none"
+                    >
+                        <path
+                            d="M18 6L6 18M18 18L6 6"
+                            stroke="white"
+                            stroke-width="2"
+                            stroke-linecap="round"
+                        />
+                    </svg>
+                </div>
                 <hr />
                 <ul class="nav nav-pills flex-column mb-auto">
                     <li class="nav-item">
